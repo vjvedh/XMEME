@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_swipe/liquid_swipe.dart';
+import 'package:xmeme_frontend/screens/IntrayPage.dart';
 import 'models/global.dart';
 
 void main() {
@@ -43,19 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
             body: Stack(children: <Widget>[
               TabBarView(
                 children: [
-                  new Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.bottomLeft,
-                        end: Alignment.topRight,
-                        colors: [
-                          blueColor,
-                          purpleColor,
-                          redColor,
-                        ],
-                      ),
-                    ),
-                  ),
+                  new IntrayPage(),
                   new Container(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
